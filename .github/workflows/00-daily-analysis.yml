@@ -482,7 +482,7 @@ jobs:
           echo ""
           
           # 构建命令行参数
-          FORCE_RUN_ARG=""
+          FORCE_RUN_ARG="--force-run"
           if [ "${{ github.event.inputs.force_run }}" = "true" ]; then
             FORCE_RUN_ARG="--force-run"
             echo "⚡ 已启用强制运行模式（跳过交易日检查）"
